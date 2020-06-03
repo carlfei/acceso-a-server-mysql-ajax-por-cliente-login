@@ -1,0 +1,8 @@
+.claseWidth{
+	width:0px;
+
+}
+.space{
+	display: flex;
+  	align-items: stretch;
+}

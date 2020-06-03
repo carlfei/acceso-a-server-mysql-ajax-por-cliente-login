@@ -1,0 +1,235 @@
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+       
+        </div>
+    </div>
+</nav>
+
+
+			<h1>Spring boot ajax</h1>
+    <div class="space"">
+        
+	
+        
+
+  
+       
+         <fieldset class="claseWidth">
+          <form class="form-horizontal" id="search-form">
+            
+         <legend>BUSCAR POR ID / LISTAR</legend>
+         
+            <div class="form-group form-group-lg">
+                
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="username"/>
+                </div>
+                 <button type="submit" id="bth-search"
+                            class="btn btn-primary btn-lg">Buscar por ID
+                    </button>
+            </div>
+         
+         
+         
+ 
+         
+         
+         
+         
+         
+         
+         
+<br>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" id="bth-search"
+                            class="btn btn-primary btn-lg">listar la tabla
+                    </button>
+                </div>
+            </div>
+			<br><br>
+ 
+ 
+ 
+ </form>
+ 
+ 
+ <fieldset class="claseWidth">
+      <form class="form-horizontal" id="search-form4">
+		            
+         <legend>BORRAR</legend>
+          <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="borrar_id"/>
+                </div>
+                 <button type="submit" id="bth-search4"
+                            class="btn btn-primary btn-lg">Borrar por ID
+                    </button>
+            </div>
+            
+            
+            </form>
+            </fieldset>
+            
+            
+             <fieldset class="claseWidth">
+             <form class="form-horizontal" id="search-form5">
+		           
+         <legend>BORRAR POR CALLE</legend>
+          <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="borrar_calle"/>
+                </div>
+                 <button type="submit" id="bth-search5"
+                            class="btn btn-primary btn-lg">Borrar por CALEE
+                    </button>
+            
+            </form>
+              </fieldset>
+                </fieldset>
+         
+       
+ 
+ 
+ 
+
+         
+        
+		
+		
+		
+		
+		
+	<fieldset class="claseWidth">
+		          <form class="form-horizontal" id="search-form3">
+		            
+         <legend>BUSCAR</legend>
+          <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="findcalle"/>
+                </div>
+                 <button type="submit" id="bth-search3"
+                            class="btn btn-primary btn-lg">Buscar por calle
+                    </button>
+            </div>
+            
+         
+       </form>
+       
+       
+       
+      
+       
+         <form class="form-horizontal" id="search-form6">
+		          <br><br>  
+         <legend>ACTUALIZAR CALLE</legend>
+         <br>
+          <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="updatebyid"/>
+                </div>
+              
+                    <label class="col-sm-2 control-label">ID</label>
+                    <br><br>
+                    
+                    
+                    
+                     <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="update_calle"/>
+                </div>
+                 <button type="submit" id="bth-search6"
+                            class="btn btn-primary btn-lg">NUEVA CALLE
+                    </button>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            </div>
+            
+         
+       </form>
+       
+       
+       
+       
+       
+       
+       
+		  </fieldset>
+		
+	
+	<fieldset class="claseWidth">
+		     <form class="form-horizontal" id="search-form2">
+         
+         
+         
+         <legend>INSERTAR</legend>
+         
+           <div class="form-group form-group-lg">
+                
+				<p>calle</p>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="insert_calle"/>
+                </div>
+				<p>numero</p>
+				<div class="col-sm-10">
+                    <input type="text" class="form-control" id="insert_numero"/>
+                </div>
+				<p>distrito</p>
+				<div class="col-sm-10">
+                    <input type="text" class="form-control" id="insert_distrito"/>
+                </div>
+				<p>cp</p>
+				<div class="col-sm-10">
+                    <input type="text" class="form-control" id="insert_cp"/>
+                </div>
+                 <button type="submit" id="bth-search2"
+                            class="btn btn-primary btn-lg">insertar
+                    </button>
+            </div>
+         
+        
+        
+        </form>
+		
+		 </fieldset>
+		
+		
+		<div id="feedback"></div>
+		
+		</div>
+		
+		
+		
+ 
+
+<div class="container">
+    <footer>
+        <p>
+            
+        </p>
+    </footer>
+</div>
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/insertar_ajax.js"></script>
+<script type="text/javascript" src="js/findbycalle_ajax.js"></script>
+<script type="text/javascript" src="js/borrar_id.js"></script>
+<script type="text/javascript" src="js/borrar_calle.js"></script>
+<script type="text/javascript" src="js/actualizar_calle.js"></script>
+</body>
+</html>
